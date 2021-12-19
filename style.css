@@ -1,0 +1,109 @@
+body {
+    background-color: #eeeeec;
+    margin: 0;
+    padding: 0;
+}
+.user-card {
+    background-color: #31394d;
+    padding: 25px;
+    margin: 50px auto;
+    width: 350px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    position: relative;
+}
+.small-icons {
+    display: flex;
+}
+.hearth-item {
+    margin-left: auto;
+}
+.user-photo {
+    position: relative;
+}
+.user-photo::after {
+    content: url(./src/icons/checkbox-marked-circle.png);
+    position: absolute;
+    bottom: 1.5em;
+    right: 4em;
+    z-index: 1;
+}
+.photo {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    object-position: left top;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 10px 13px -5px rgba(0, 0, 0, 0.62);
+}
+.user-info {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.user-info h2 {
+    margin-bottom: 5px;
+}
+.user-info p {
+    margin-top: 5px;
+}
+.hire-button {
+    height: 40px;
+    width: 50%;
+    background: linear-gradient(90deg, rgba(209,19,116,1) 0%, rgba(247,63,152,1) 100%);
+    border: none;
+    border-radius: 25px;
+    color: inherit;
+    font-size: 15pt;
+}
+.tech {
+    color: grey;
+    letter-spacing: 2pt;
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 2px solid white;
+    text-align: center;
+}
+.social-media h2 {
+    color: white;
+}
+.social-media span {
+    color: grey;
+}
+.big-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.column h2{
+    font-size: 14pt;
+}
+.column span {
+    display: block;
+    margin-top: -18px;
+}
+.overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 90%;
+    color: white;
+    box-sizing: border-box;
+    transition: height ease 1s;
+    text-align: center;
+}
+.user-card:hover .overlay {
+height: 60%;
+}
